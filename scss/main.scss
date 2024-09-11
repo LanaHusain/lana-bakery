@@ -1,0 +1,86 @@
+@use "modules/css-reset";
+@use "modules/typography";
+@use "modules/variable" as v;
+body {
+  background-color: v.$text-secondary;
+  height: 2000px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 2rem;
+  margin: 2rem;
+  padding: 1rem 2rem;
+  background-color: rgba($color: #000000, $alpha: 0);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  transition: 0.3s;
+}
+.scrolled {
+  background-color: rgba($color: #000000, $alpha: 0.3);
+  backdrop-filter: blur(5px);
+}
+
+.nav-list {
+  display: flex;
+  gap: 2rem;
+  a {
+    color: v.$text-dark;
+    text-decoration: none;
+    background-color: v.$text-secondary;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+  }
+}
+
+.nav-brand {
+  color: v.$text-secondary;
+}
+
+.nav-cta {
+  a {
+    button {
+      border-style: none;
+      padding: 0.5rem 1rem;
+      border-radius: 2rem;
+      background-color: v.$text-main;
+      color: v.$text-dark;
+      font-weight: 600;
+      font-size: 1.5rem;
+      font-family: "Poppins", system-ui;
+    }
+  }
+}
+
+// Container
+.container {
+  margin: 1rem auto;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+//   Header
+header {
+  background-image: url(../img/bread-bg.jpg);
+  background-size: cover;
+  background-position: right;
+  height: 500px;
+  box-sizing: border-box;
+  padding: 10rem 7%;
+  margin: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-radius: 2rem;
+}
+
+.header-capt {
+  color: v.$text-secondary;
+}
+

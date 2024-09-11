@@ -1,0 +1,254 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Poppins", system-ui;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: clamp(1.875rem, 1.601rem + 1.2179vw, 3.0625rem);
+}
+
+h2 {
+  font-size: clamp(1.625rem, 1.3606rem + 0.8974vw, 2.4375rem);
+}
+
+h3 {
+  font-size: clamp(1.3125rem, 1.1683rem + 0.641vw, 1.9375rem);
+}
+
+h4 {
+  font-size: clamp(1.125rem, 1.024rem + 0.4487vw, 1.5625rem);
+}
+
+h5 {
+  font-size: clamp(0.6875rem, 0.5577rem + 0.5769vw, 1.25rem);
+}
+
+h6 {
+  font-size: clamp(0.4375rem, 0.3077rem + 0.5769vw, 1rem);
+}
+
+p {
+  font-size: clamp(0.3125rem, 0.1971rem + 0.5128vw, 0.8125rem);
+}
+
+a {
+  font-size: clamp(0.6875rem, 0.5577rem + 0.5769vw, 1.25rem);
+}
+
+body {
+  background-color: #f5f5f5;
+  height: 2000px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 2rem;
+  margin: 2rem;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  transition: 0.3s;
+}
+
+.scrolled {
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.nav-list {
+  display: flex;
+  gap: 2rem;
+}
+.nav-list a {
+  color: #9c634f;
+  text-decoration: none;
+  background-color: #f5f5f5;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+}
+
+.nav-brand {
+  color: #f5f5f5;
+}
+
+.nav-cta a button {
+  border-style: none;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  background-color: #f0d7a7;
+  color: #9c634f;
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-family: "Poppins", system-ui;
+}
+
+.container {
+  margin: 1rem auto;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+header {
+  background-image: url(../img/bread-bg.jpg);
+  background-size: cover;
+  background-position: right;
+  height: 500px;
+  box-sizing: border-box;
+  padding: 10rem 7%;
+  margin: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-radius: 2rem;
+}
+
+.header-capt {
+  color: #f5f5f5;
+}/*# sourceMappingURL=main.css.map */

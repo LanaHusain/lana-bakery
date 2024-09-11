@@ -1,0 +1,44 @@
+body {
+  font-family: "Poppins", system-ui;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: clamp(1.875rem, 1.601rem + 1.2179vw, 3.0625rem);
+}
+
+h2 {
+  font-size: clamp(1.625rem, 1.3606rem + 0.8974vw, 2.4375rem);
+}
+
+h3 {
+  font-size: clamp(1.3125rem, 1.1683rem + 0.641vw, 1.9375rem);
+}
+
+h4 {
+  font-size: clamp(1.125rem, 1.024rem + 0.4487vw, 1.5625rem);
+}
+
+h5 {
+  font-size: clamp(0.6875rem, 0.5577rem + 0.5769vw, 1.25rem);
+}
+
+h6 {
+  font-size: clamp(0.4375rem, 0.3077rem + 0.5769vw, 1rem);
+}
+
+p {
+  font-size: clamp(0.3125rem, 0.1971rem + 0.5128vw, 0.8125rem);
+}
+
+a {
+  font-size: clamp(0.6875rem, 0.5577rem + 0.5769vw, 1.25rem);
+}
