@@ -57,6 +57,23 @@ nav {
   }
 }
 
+// Hamburger
+.hamburger {
+  display: none;
+  .bar {
+    width: 20px;
+    margin: 0.3rem;
+    height: 3px;
+    background-color: v.$text-secondary;
+  }
+}
+
+.hamburger-cta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 // Container
 .container {
   margin: 1rem auto;
@@ -84,3 +101,17 @@ header {
   color: v.$text-secondary;
 }
 
+// Responsive
+@media (max-width: 810px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-list {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 10rem;
+    right: 7rem;
+  }
+}
