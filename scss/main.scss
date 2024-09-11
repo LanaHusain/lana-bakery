@@ -105,6 +105,17 @@ header {
 @media (max-width: 810px) {
   .hamburger {
     display: block;
+    &.active {
+      .bar:nth-child(2) {
+        opacity: 0;
+      }
+      .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+      }
+      .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+      }
+    }
   }
 
   .nav-list {
@@ -112,6 +123,13 @@ header {
     display: flex;
     flex-direction: column;
     top: 10rem;
-    right: 7rem;
+    right: 7%;
+  }
+}
+
+// Phone
+@media (max-width: 480px) {
+  .nav-cta {
+    display: none;
   }
 }
