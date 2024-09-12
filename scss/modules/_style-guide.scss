@@ -1,0 +1,19 @@
+@use "variable" as v;
+
+.btn {
+  border-style: none;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  background-color: v.$text-main;
+  color: v.$text-dark;
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-family: "Poppins", system-ui;
+  &-xl {
+    font-size: clamp(2rem, 2vw, 3rem);
+  }
+}
+
+img {
+  width: 100%;
+}
